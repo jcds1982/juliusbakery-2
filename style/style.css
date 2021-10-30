@@ -3,3 +3,7 @@
 div{
     padding: 0;
 }
+
+label, input{
+    display: block;
+}
