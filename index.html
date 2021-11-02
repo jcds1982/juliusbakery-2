@@ -2,35 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
 <!--    TODO: I need to setup labels that be translatable -->
     <title>Formula Panadera</title>
-
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<link rel="stylesheet" href="style/style.css">
+
 
 
 <!-- PANEL A - Weight per Units, and requested Units -->
-<div>
-    PANEL A
+<div class="container container-column">
+    <div class="container-content ">
+        <label for="WeightPerUnit">Peso por Unidad:</label>
+        <input type="text" id="WeightPerUnit" >
+    </div>
+    
 
-    <label for="WeightPerUnit">Peso por Unidad :</label>
-    <input type="text" id="WeightPerUnit" >
-
-    <label for="Units">Unidades :</label>
-    <input type="text" id="Units" >
+    <div class="container-content">
+        <label for="Units">Unidades :</label>
+        <input type="text" id="Units" >
+    </div>
 </div>
 
 
 <!--<br/><br/><br/>-->
 <!-- PANEL B - Ingredients, Percentages and Weight -->
-<div>
-    PANEL B
+<div class="container">
+    
+    <div class="container-content">
+        <label for="Units">Ingredientes :</label>
+        <input type="text" id="Units" >
+    </div>
 
+    <div class="container-content">
+        <label for="Units">Porcentaje % :</label>
+        <input type="text" id="Units" >
+    </div>
 
-<br/><br/><br/>
+    <div class="container-content">
+        <label for="Units">Peso gr. :</label>
+        <input type="text" id="Units" >
+    </div>
+
+    <div class="container-content">
+        <label for="Units">Peso Kg :</label>
+        <input type="text" id="Units" >
+    </div>
+
 <!-- Panel C - Ingredients table -->
-<div>
+<!-- <div>
     PANEL C
     <table>
         <thead>
@@ -47,7 +71,7 @@
         </tr>
         </thead>
     </table>
-</div>
+</div> -->
 
 </body>
 </html>

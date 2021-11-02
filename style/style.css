@@ -1,9 +1,41 @@
 /* Bakery Formula Style */
 
-div{
-    padding: 0;
+
+label, input {
+    display: block;
+} 
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    background-color: gainsboro;
+    margin-bottom: 1em;
+    width: 100%;
+    
 }
 
-label, input{
-    display: block;
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        width: 50%;
+    } 
 }
+
+@media (max-width: 400px){
+    .container{
+        width: 200px;
+    } 
+}
+
+.container-column{
+    flex-direction: column;    
+}
+
+.container-content{
+    padding: 0.6em;
+}
+
+
+
+
