@@ -1,41 +1,80 @@
 /* Bakery Formula Style */
 
-
-label, input {
+label,
+input {
     display: block;
-} 
+}
 
-.container{
+.container {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    align-items: center;
+    justify-items: center;
     align-content: center;
     background-color: gainsboro;
     margin-bottom: 1em;
     width: 100%;
-    
 }
 
-@media (max-width: 768px){
-    .container{
+@media (max-width: 768px) {
+    .container {
         flex-direction: column;
         width: 50%;
-    } 
+    }
 }
 
-@media (max-width: 400px){
-    .container{
+@media (max-width: 400px) {
+    .container {
         width: 200px;
-    } 
+    }
 }
 
-.container-column{
-    flex-direction: column;    
+.container-column {
+    flex-direction: column;
 }
 
-.container-content{
+.container-content {
     padding: 0.6em;
 }
 
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(auto-fill);
+    grid-template-areas:
+        "h_action h_ingredient h_percentage h_weight_gr h_weight_kg"
+        "row row row row row";
+    grid-gap: 0.2em;
+}
 
+.table__header_action {
+    grid-area: h_action;
+}
 
+.table__header_ingredient {
+    grid-area: h_ingredient;
+}
 
+.table__header_percentage {
+    grid-area: h_percentage;
+}
+
+.table__header_weight_gr {
+    grid-area: h_weight_gr;
+}
+
+.table__header_weight_kg {
+    grid-area: h_weight_kg;
+}
+
+.table__row_cell {
+    grid-area: rowCell;
+}
+
+.table__cell {
+    border-radius: 5px;
+    background-color: rgb(112, 175, 177);
+    color: #fff;
+    padding: 0.5em;
+    font-size: 14px;
+}

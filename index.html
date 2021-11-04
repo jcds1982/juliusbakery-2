@@ -9,6 +9,7 @@
         <!--    TODO: I need to set up labels that be translatable -->
         <title>Formula Panadera</title>
         <link rel="stylesheet" href="style/style.css" />
+        <script src="lib/lib.js" type="text/javascript"></script>
     </head>
     <body>
         <!-- PANEL A - Weight per Units, and requested Units -->
@@ -46,12 +47,17 @@
                 <label for="weightKg">Peso Kg :</label>
                 <input type="text" id="weightKg" />
             </div>
+            <div class="container-content">
+                <button onclick="CreateGrid('ingredientsTable');">
+                    Agregar
+                </button>
+            </div>
         </div>
 
         <!-- Panel C - Ingredients table -->
         <div>
             PANEL C
-            <div id="ingredientsTable"></div>
+            <div class="table-container" id="ingredientsTable"></div>
         </div>
     </body>
 </html>
