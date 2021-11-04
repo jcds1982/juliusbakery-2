@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-<!--    TODO: I need to setup labels that be translatable -->
+    <!--    TODO: I need to set up labels that be translatable -->
     <title>Formula Panadera</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-
-
-
-<!-- PANEL A - Weight per Units, and requested Units -->
-<div class="container container-column">
-    <div class="container-content ">
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- PANEL A - Weight per Units, and requested Units -->
+    <div class="container container-column">
+      <div class="container-content">
         <label for="WeightPerUnit">Peso por Unidad:</label>
-        <input type="text" id="WeightPerUnit" >
-    </div>
-    
+        <input type="text" id="WeightPerUnit" />
+      </div>
 
-    <div class="container-content">
+      <div class="container-content">
         <label for="Units">Unidades :</label>
-        <input type="text" id="Units" >
-    </div>
-</div>
-
-
-<!--<br/><br/><br/>-->
-<!-- PANEL B - Ingredients, Percentages and Weight -->
-<div class="container">
-    
-    <div class="container-content">
-        <label for="Units">Ingredientes :</label>
-        <input type="text" id="Units" >
+        <input type="text" id="Units" />
+      </div>
     </div>
 
-    <div class="container-content">
-        <label for="Units">Porcentaje % :</label>
-        <input type="text" id="Units" >
+    <!--<br/><br/><br/>-->
+    <!-- PANEL B - Ingredients, Percentages and Weight -->
+    <div class="container">
+      <div class="container-content">
+        <label for="ingredient">Ingrediente :</label>
+        <input type="text" id="ingredient" />
+      </div>
+
+      <div class="container-content">
+        <label for="percentage"> % :</label>
+        <input type="text" id="percentage" />
+      </div>
+
+      <div class="container-content">
+        <label for="weightGr">Peso gr. :</label>
+        <input type="text" id="weightGr" />
+      </div>
+
+      <div class="container-content">
+        <label for="weightKg">Peso Kg :</label>
+        <input type="text" id="weightKg" />
+      </div>
     </div>
 
-    <div class="container-content">
-        <label for="Units">Peso gr. :</label>
-        <input type="text" id="Units" >
-    </div>
-
-    <div class="container-content">
-        <label for="Units">Peso Kg :</label>
-        <input type="text" id="Units" >
-    </div>
-
-<!-- Panel C - Ingredients table -->
-<!-- <div>
+    <!-- Panel C - Ingredients table -->
+    <!-- <div>
     PANEL C
     <table>
         <thead>
@@ -63,7 +58,7 @@
                 Ingredientes
             </td>
             <td>
-                Percentages
+        Percentages
             </td>
             <td>
                 Weight gr.
@@ -72,6 +67,5 @@
         </thead>
     </table>
 </div> -->
-
-</body>
+  </body>
 </html>
