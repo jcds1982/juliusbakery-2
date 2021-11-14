@@ -50,3 +50,8 @@ input {
     padding: 0.5em;
     font-size: 14px;
 }
+
+.input__error {
+    border-color: #dc143d;
+    border: 1 solid;
+}
