@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <!--    TODO: I need to set up labels that be translatable -->
+        <title>Formula Panadera</title>
+        <link rel="stylesheet" href="style/style.css" />
+        <script defer src="lib/main.js" type="module"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <!--    TODO: I need to set up labels that be translatable -->
-    <title>Formula Panadera</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <script defer src="lib/main.js" type="module"></script>
-</head>
+    <body>
+        <!-- PANEL A - Weight per Units, and requested Units -->
+        <div class="container container-column" id="panelA"></div>
 
-<body>
-    <!-- PANEL A - Weight per Units, and requested Units -->
-    <div class="container container-column" id="panelA"></div>
+        <!-- PANEL B - Ingredients, Percentages and Weight -->
+        <div class="container" id="panelB">
+            <!-- TODO: remove these two radio buttons. This should be added dynamically in main.js -->
+            <div class="container-content">
+                <label for="percentage">%</label>
+                <input
+                    type="radio"
+                    name="calculationMethod"
+                    id="percentage_radio"
+                    value="percentage"
+                    checked
+                />
+            </div>
+            <div class="container-content">
+                <label for="weight">gr.</label>
+                <input
+                    type="radio"
+                    name="calculationMethod"
+                    id="weight_radio"
+                    value="weight"
+                />
+            </div>
+            <!-- END - REMOVE Radio buttons -->
+        </div>
 
-    <!-- PANEL B - Ingredients, Percentages and Weight -->
-    <div class="container" id="panelB">
-    </div>
-
-    <!-- Panel C - Ingredients table -->
-    <div>
-        PANEL C
+        <!-- PANEL C - Ingredients table -->
         <div class="table-container" id="ingredientsTable"></div>
-    </div>
-</body>
-
+    </body>
 </html>
