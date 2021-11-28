@@ -1,9 +1,10 @@
 # Utility Functions
 
+-   createInput
+-   createButton
+-   createPanel
+-   clearTable
 -   validateNumber
 -   clearValues
 -   createCell
--   createInput
--   createButton
--   ClearTable
--   createTable
+-   addRow
