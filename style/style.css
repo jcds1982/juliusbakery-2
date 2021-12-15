@@ -38,7 +38,7 @@ input {
 
 .table-container {
     display: grid;
-    grid-template-columns: repeat(3, 18%);
+    grid-template-columns: repeat(5, 18%);
     grid-template-rows: repeat(auto-fill);
     grid-gap: 0.2em;
 }
