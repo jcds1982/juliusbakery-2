@@ -1,8 +1,58 @@
 /* Bakery Formula Style */
+@font-face {
+    font-family: baloo;
+    src: url(/style/Baloo_2/Baloo2-VariableFont_wght.ttf);
+}
 
 label,
 input {
     display: block;
+}
+
+label {
+    color: #062726;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.2em;
+}
+
+input {
+    border: 0;
+    border-bottom: 1 solid;
+    color: #2c3338;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: #7fb3d5;
+    color: #ffffff;
+    border-bottom: 1 solid;
+    outline: none;
+}
+
+button {
+    background-color: #1a5276;
+    border: 1px solid #1a5276;
+    color: #ffffff;
+    padding: 0.8em;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button:hover,
+button:focus {
+    background-color: #ffffff;
+    color: #1a5276;
+    border: 1px solid #1a5276;
+    font-weight: bold;
+}
+
+body {
+    font-family: baloo;
+    background-color: #6883bc;
 }
 
 .container {
@@ -10,26 +60,19 @@ input {
     align-items: center;
     justify-items: center;
     align-content: center;
-    background-color: gainsboro;
+    background-color: #ffffff;
     margin-bottom: 1em;
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        width: 50%;
-    }
-}
-
-@media (max-width: 400px) {
-    .container {
-        width: 200px;
-    }
+    margin-left: 1em;
+    width: 30em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 0px solid;
+    border-radius: 2px;
+    /* box-shadow: 0px 0px 6px #919191, 0 3px 6px #919191; */
 }
 
 .container-column {
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 .container-content {
@@ -37,20 +80,120 @@ input {
 }
 
 .table-container {
+    width: 70%;
     display: grid;
-    grid-template-columns: 5% 20% 10% 10% 10%;
+    grid-template-columns: 15% 30% 15% 20% 20%;
     grid-template-rows: repeat(auto-fill);
-    grid-gap: 0.2em;
+    grid-gap: 0.1em;
+    padding: 1em;
+}
+
+.table-container-card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 6px #919191, 0 3px 6px #919191; */
+}
+
+.container-title {
+    font-size: 1.5em;
+    color: #1a5276;
+    font-weight: bold;
 }
 .table__cell {
-    border-radius: 5px;
-    background-color: rgb(112, 175, 177);
+    border-radius: 3px;
+    background-color: #79a7d3;
     color: #fff;
     padding: 0.5em;
     font-size: 14px;
 }
 
 .input__error {
-    border-color: #dc143d;
-    border: 1 solid;
+    background-color: #db8098; /*#dc143d;*/
+}
+
+.app {
+    /* min-height: 95vh; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.main-title {
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 95%;
+    text-align: center;
+    padding: 1em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 30em;
+        transition: 0.3s all;
+    }
+
+    .app {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin-left: 0%;
+        transition: 0.3s all;
+    }
+}
+
+@media (max-width: 500px) {
+    .table-container {
+        width: 20em;
+    }
+
+    .app {
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        transition: 0.3s all;
+    }
+
+    .container {
+        flex-direction: column;
+        max-width: 20em;
+        transition: 0.3s all;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .card-title {
+        width: 18em;
+    }
 }
