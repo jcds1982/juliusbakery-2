@@ -7,7 +7,3 @@
 Pending:
 
 -   [x] Add Calculation method radio button.
--   [ ] Percentage option should be selected by default
--   [ ] When calculation method is selected, all none related inputs should be hide or remove.
-
----
