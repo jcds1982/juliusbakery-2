@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
+<head>
+    <meta charset="UTF-8"/>
+    <meta
             name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        />
-        <!--    TODO: I need to set up labels that be translatable -->
-        <title>Formula Panadera</title>
-        <link rel="stylesheet" href="style/style.css" />
-        <script defer src="lib/main.js" type="module"></script>
-    </head>
+    />
+    <!--    TODO: I need to set up labels that be translatable -->
+    <title>Formula Panadera</title>
+    <link rel="stylesheet" href="style/style.css"/>
+    <script defer src="lib/main.js" type="module"></script>
+</head>
 
-    <body>
-        <div class="main-title app">
-            <div class="title">Formula Panadera</div>
+<body>
+<div class="main-title app">
+    <div class="title">Formula Panadera</div>
+</div>
+<div class="app">
+    <div class="container container-column">
+        <!-- PANEL A - Weight per Units, and requested Units -->
+        <div id="panelA"></div>
+        <!-- PANEL B - Ingredients, Percentages and Weight -->
+        <div id="panelB"></div>
+        <div class=" container-column" id="buttons"></div>
+    </div>
+    <!-- PANEL C - Ingredients table -->
+    <div class="card">
+        <div class="card-content">
+            <div class="card-title">Tabla de Ingredientes</div>
+            <div class="table-container" id="ingredientsTable"></div>
         </div>
-        <div class="app">
-            <!-- PANEL A - Weight per Units, and requested Units -->
-            <div class="container container-column" id="panelA"></div>
+    </div>
 
-            <!-- PANEL B - Ingredients, Percentages and Weight -->
-            <div class="container container-column" id="panelB"></div>
-        </div>
-        <!-- PANEL C - Ingredients table -->
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title">Tabla de Ingredientes</div>
-                <div class="table-container" id="ingredientsTable"></div>
-            </div>
-        </div>
-    </body>
+</div>
+<!-- PANEL C - Ingredients table -->
+<!--<div class="card">-->
+<!--    <div class="card-content">-->
+<!--        <div class="card-title">Tabla de Ingredientes</div>-->
+<!--        <div class="table-container" id="ingredientsTable"></div>-->
+<!--    </div>-->
+<!--</div>-->
+</body>
 </html>
